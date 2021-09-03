@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      
+      <section class="card">
+        <section class="card-header">
+          <h2>Generate a Password</h2>
+        </section>
+
+        <section class="card-body">
+          <textarea
+            readonly
+            class="password"
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </section>
+
+        <section class="card-footer">
+          <section class="card-footer-container">
+            <h2>Password Criteria:</h2>
+            <section class="card-footer-details">
+              <label for="pwd-length">Password Length:</label> 
+              <input type="range" name="the-length" id="pwd-length" min="8" max="128" step="1" value="8">
+              <output class="pwd-length" for="pwd-length"></output>
+            </section>
+            <section class="card-footer-details">
+              <label for="chk-numeric">Include Numbers.&#9;</label>
+              <input type="checkbox" id="chk-numeric" name="check-numeric" value="chk-numeric">
+            </section>
+            <section class="card-footer-details">
+              <label for="chk-uppercase">Include Uppercase Letters.&#9;</label>
+              <input type="checkbox" id="chk-uppercase" name="check-uppercase" value="chk-uppercase">
+            </section>
+            <section class="card-footer-details">
+              <label for="chk-lowercase">Include Lowercase Letters.&#9;</label>
+              <input type="checkbox" id="chk-lowercase" name="check-lowercase" value="chk-lowercase">
+            </section>
+            <section class="card-footer-details">
+              <label for="chk-special">Include Special Characters.&#9;</label>
+              <input type="checkbox" id="chk-special" name="check-special" value="chk-special">
+            </section>
+            <section class="card-footer-button">
+            <button id="generate" class="btn">Generate Password</button>
+          </section>
+          </section>
+        </section>
+      
+      </section>
+    </main>
+    <script src="./assets/scripts/script.js"></script>
+  </body>
+</html>
