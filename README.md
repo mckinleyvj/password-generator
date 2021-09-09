@@ -1,4 +1,4 @@
-# password-generator
+# Week 2 - Password Generator
 
 ## Repository Description:
 
